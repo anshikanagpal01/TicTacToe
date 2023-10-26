@@ -1,0 +1,79 @@
+
+.board-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.play-again-button {
+  display: block;
+  margin-top: 20px;
+}
+
+.play-again-button button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.play-again-button button:hover {
+  background-color: #45a049;
+}
+
+.square {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px solid #000;
+}
+
+.square.blue {
+  color: blue;
+}
+
+
+.square.green {
+  color: green;
+}
+
+body {
+  position: relative;
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Set the height of the body to the full viewport height */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("C:\Users\Anshika Nagpal\Desktop\TIC-TAC-TOE\my-app\src\background.jpg");
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  filter: blur(4px); /* Apply a blur effect with a radius of 10px */
+  z-index: -1; /* Place the blurred image behind the content */
+}
